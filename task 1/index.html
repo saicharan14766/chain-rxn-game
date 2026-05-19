@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CHAIN REACTION GAME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>CHAIN REACTION GAME</h1>
+<div class="top-info">
+    <div>Turn: <span id="turnText">Player 1</span></div>
+    <div>Game: <span id="gameTimer">300</span>s</div>
+    <div>Turn Timer: <span id="turnTimer">15</span>s</div>
+</div>
+<div class="top-info">
+    <button id="pauseBtn">Pause</button>
+    <button id="resumeBtn">Resume</button>
+    <button id="restartBtn">Restart</button>
+</div>
+<div class="top-info">
+    <div>Player 1: <span id="p1Score">0</span></div>
+    <div>Player 2: <span id="p2Score">0</span></div>
+</div>
+<div id="board"></div>
+<div id="winnerPopup" class="hidden">
+    <h2 id="winnerText"></h2>
+    <button onclick="location.reload()">Play Again</button>
+</div>
+<script src="state_manager.js"></script>
+<script src="game_engine.js"></script>
+<script src="ui_controller.js"></script>
+<script src="event_handler.js"></script>
+</body>
+</html>
